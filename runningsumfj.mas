@@ -4,8 +4,8 @@
 
 
 ORG 100
-Start,    LOAD ANSWER                 / LOAD ANSWER into AC
-              OUTPUT                  / OUTPUT AC
+Start,    LOAD ANSWER                  / LOAD ANSWER into AC
+              OUTPUT                   / OUTPUT AC
 
               INPUT                    / Input value NUM from keyboard into AC
               STORE NUM                / Save NUM
