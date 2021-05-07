@@ -1,0 +1,27 @@
+/A Marie assembler program
+/which will input a series of integer values and output a running sum
+ORG 100
+Start,    LOAD ANSWER         / LOAD ANSWER into AC
+              OUTPUT                        / OUTPUT AC
+
+              INPUT                            / Input value NUM from keyboard into AC
+              STORE NUM                / Save NUM
+/Check NUM ==(-1) ?
+              SUBT one                      / NUM - (-1)
+              SKIPCOND 400             / IF(NUM == -1) skip next instruction and go to End
+              JUMP Sum                    / ELSE IF(NUM!= -1)  go to  Sum
+              JUMP End                     / go to End
+ 
+/ Addition
+Sum,     LOAD ANSWER           /Load the value ANSWER into AC
+              ADD  NUM                    /Add the value  ANSWER to NUM
+              STORE ANSWER         /Store  ANSWER
+              JUMP Start                    / go to next loop
+
+End,     HALT   	                            / Terminate program
+
+/ variables and constant values
+/data
+NUM,          DEC 0
+ANSWER, DEC 0
+one,            DEC -1
