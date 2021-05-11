@@ -1,3 +1,14 @@
+=begin
+This creates a Ruby definition which adds the 
+division operator to the standard string 
+class. When dividing a string by an integer, 
+the operator produces an array of strings. 
+The size of the array is the given integer, 
+and contents of the array are parts of the 
+string that, when concatenated in order, 
+produce the original string.
+=end
+
 # reopen the string class
 String.class_eval do
   # add a definition of the method /.
