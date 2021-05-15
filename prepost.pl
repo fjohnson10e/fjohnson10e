@@ -1,3 +1,6 @@
+%THis is a simple Prolog script that defines two relations that
+%makes the first argument a prefix or a postfix of the second.
+
 %A prefix is empty or not.
 
 %An empty list is a prefix of anything.
