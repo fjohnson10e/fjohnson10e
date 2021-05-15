@@ -1,3 +1,5 @@
+#Constructs Gray Codes of sizes 1 to 5 recursively
+
 from functools import lru_cache
 import sys
 
